@@ -1,0 +1,1 @@
+{"uuid":"e3b9e7d4-256f-4b28-9449-ec8e9d6f9821","name":"qaautomation.march2022.BaseAPIKolakProject.registerKolak","description":"","start":1649658689375,"stop":1649658690834,"children":["a5869081-93df-46c3-865d-4a19ff29ab2d"],"befores":[{"name":"registerKolak","status":"passed","stage":"finished","description":"","start":1649658689375,"stop":1649658690834}]}

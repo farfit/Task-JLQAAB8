@@ -1,0 +1,1 @@
+{"uuid":"f4186dff-8b67-4c28-8bb3-04b266fcbbe5","name":"qaautomation.march2022.AppTest.cleanUp","description":"","start":1648872244161,"stop":1648872249848,"children":["c6230056-1aa7-4eb1-8104-ca9da0c07176"],"afters":[{"name":"cleanUp","status":"passed","stage":"finished","description":"","start":1648872244161,"stop":1648872249848}]}

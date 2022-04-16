@@ -1,0 +1,7 @@
+#surefire_0
+#Sat Apr 16 11:31:25 ICT 2022
+surefire.suiteXmlFiles=api.xml
+user.dir=C\:\\Users\\FE_Procurite\\Desktop\\march2022
+env=stage
+localRepository=C\:\\Users\\FE_Procurite\\.m2\\repository
+basedir=C\:\\Users\\FE_Procurite\\Desktop\\march2022
