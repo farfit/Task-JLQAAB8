@@ -6,7 +6,7 @@ Membuat Tree map dan membuat Tree set yang dimana isinya minimal 3 anggota
 ``
 
 Run:
-[Task-1](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
+[Task-1](https://github.com/farfit/Task-JLQAAB8/blob/89f51c753d10b1d2046c62238da3d0796f3f5ea1/src/test/java/qaautomation/march2022/Task1.java)
 
 ## Task 2
 ``
@@ -14,7 +14,7 @@ Create calculator that can do (+)(-)(x)(/) when input is 2 integer. If input is 
 ``
 
 Run:
-[Task-2](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
+[Task-2](https://github.com/farfit/Task-JLQAAB8/blob/89f51c753d10b1d2046c62238da3d0796f3f5ea1/src/test/java/qaautomation/march2022/Task2.java)
 
 ## Task 3
 ``
@@ -22,7 +22,7 @@ Page Factory > Create Page Factory as same as code in class
 ``
 
 Run:
-[Task-3](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
+[Task-3](https://github.com/farfit/Task-JLQAAB8/blob/89f51c753d10b1d2046c62238da3d0796f3f5ea1/src/test/java/qaautomation/march2022/AppTestAfterPOMFactory.java)
 
 ## Task 4
 ``
@@ -30,7 +30,7 @@ open yopmail.com, input automationtest, and get first message (you must using sw
 ``
 
 Run:
-[Task-4](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
+[Task-4](https://github.com/farfit/Task-JLQAAB8/blob/89f51c753d10b1d2046c62238da3d0796f3f5ea1/src/test/java/qaautomation/march2022/AppTestAfterPOMFactoryYopmail.java)
 
 ## Task 5
 ``
@@ -38,15 +38,12 @@ Create automation for register kolak project
 ``
 
 Run:
-[Task-3](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
+[Task-5](https://github.com/farfit/Task-JLQAAB8/blob/89f51c753d10b1d2046c62238da3d0796f3f5ea1/src/test/java/qaautomation/march2022/KolakProjectRegister.java)
 
 ## Task 6
 ``
-Create automation for register kolak project
+Buat github yang berisi tugas 1-5, yang jelas setiap tugas dijelaskan di readme.md dan berikan path setiap tugasnya
 ``
-
-Run:
-[Task-6](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
 
 ## Task 7
 ``
@@ -55,4 +52,4 @@ Log error email, first name, lastname dan id
 ``
 
 Run:
-[Task-7](https://github.com/farfit/JL-QAA-B8/blob/c44a27c0299b61c4d018859c38cf4dd146f20440/src/test/java/qaautomation/march2022/APITest.java)
+[Task-7](https://github.com/farfit/Task-JLQAAB8/blob/89f51c753d10b1d2046c62238da3d0796f3f5ea1/march2022.jmx)
