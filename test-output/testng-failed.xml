@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qaautomation.march2022.KolakProjectRegister">
+      <class name="qaautomation.march2022.AppTestAfterPOMFactoryYopmail">
         <methods>
-          <include name="registerKolakHasBeenTaken"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="getFirstMessage"/>
         </methods>
-      </class> <!-- qaautomation.march2022.KolakProjectRegister -->
+      </class> <!-- qaautomation.march2022.AppTestAfterPOMFactoryYopmail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

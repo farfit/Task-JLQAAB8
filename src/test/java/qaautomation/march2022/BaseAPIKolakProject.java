@@ -22,29 +22,5 @@ public class BaseAPIKolakProject {
 	String email;
 	String phoneNumber;
 
-	public Response registerKolak() {
-
-		Faker faker = new Faker();
-		username = faker.name().firstName().toLowerCase();
-		password = username + "123";
-		email = username + "@yopmail.com";
-		phoneNumber = faker.phoneNumber().phoneNumber();
-//		System.out.println(username);
-//		System.out.println(password);
-//		System.out.println(email);
-//		System.out.println(phoneNumber);
-
-		String registerKolakPayload = "{\"username\":\"" + username + "\", \"password\": \"" + password
-				+ "\", \"email\":\"" + email + "\", \"phonenumber\":\"" + phoneNumber + "\"}";
-
-//		String registerKolakPayload = DataUtility.getDataFromExcel("Payloads", "RegisterKolakPayload");
-		Response responseRegisterKolak = given().spec(kolakCommonJsonSpec).body(registerKolakPayload).when()
-				.post("/register");
-		registerKolakJsonSpec = new RequestSpecBuilder()
-				.setBaseUri(DataUtility.getDataFromExcel("Config", "EndPointKolak")).setBody(registerKolakPayload)
-				.setContentType(ContentType.JSON).build().log().all();
-
-		return responseRegisterKolak;
-	}
-
+	
 }

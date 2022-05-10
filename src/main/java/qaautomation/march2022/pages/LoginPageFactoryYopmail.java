@@ -15,6 +15,10 @@ public class LoginPageFactoryYopmail extends BasePage {
 	@FindBy(xpath = "//i[@class='material-icons-outlined f36']")
 	private WebElement loginBtn;
 	
+	@FindBy(xpath = "/html[1]/body[1]/main[1]")
+	private WebElement iFrame;
+	
+	
 		
 	public LoginPageFactoryYopmail(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
@@ -27,6 +31,11 @@ public class LoginPageFactoryYopmail extends BasePage {
 
 	public void clickLoginButton() {
 		loginBtn.click();
+	}
+	
+	public String getTextIFrame() {
+		
+		return iFrame.getText();
 	}
 
 	

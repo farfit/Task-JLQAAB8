@@ -20,22 +20,47 @@ public class KolakProjectRegister extends BaseAPIKolakProject {
 	@Test
 	public void registerKolakSuccess() {
 
-		Response responseRegisterKolak = super.registerKolak();		
+		String registerKolakPayload = generateRegisterPayload();
+
+		Response responseRegisterKolak = given().spec(kolakCommonJsonSpec).body(registerKolakPayload).when()
+				.post("/register");
+		registerKolakJsonSpec = new RequestSpecBuilder()
+				.setBaseUri(DataUtility.getDataFromExcel("Config", "EndPointKolak")).setBody(registerKolakPayload)
+				.setContentType(ContentType.JSON).build().log().all();
 		assertEquals(responseRegisterKolak.getStatusCode(), 201);
 		responseRegisterKolak.then().assertThat()
 				.body(matchesJsonSchema(DataUtility.getDataFromExcel("Schemas", "RegisterKolakSchemas")));
 
 	}
-	
+
 	@Test
 	public void registerKolakHasBeenTaken() {
 
-		Response responseRegisterKolak = super.registerKolak();
+		String registerKolakPayload = generateRegisterPayload();
+
+		given().spec(kolakCommonJsonSpec).body(registerKolakPayload).when().post("/register");
+
+		Response responseRegisterKolak = given().spec(kolakCommonJsonSpec).body(registerKolakPayload).when()
+				.post("/register");
+
+		registerKolakJsonSpec = new RequestSpecBuilder()
+				.setBaseUri(DataUtility.getDataFromExcel("Config", "EndPointKolak")).setBody(registerKolakPayload)
+				.setContentType(ContentType.JSON).build().log().all();
 		assertEquals(responseRegisterKolak.getStatusCode(), 400);
 		responseRegisterKolak.then().assertThat()
 				.body(matchesJsonSchema(DataUtility.getDataFromExcel("Schemas", "DashboardNoParamSchema")));
 
 	}
-	
-	
+
+
+	private String generateRegisterPayload() {
+		Faker faker = new Faker();
+		username = faker.name().firstName().toLowerCase();
+		password = username + "123";
+		email = username + "@yopmail.com";
+		phoneNumber = faker.phoneNumber().phoneNumber();
+		String registerKolakPayload = "{\"username\":\"" + username + "\", \"password\": \"" + password
+				+ "\", \"email\":\"" + email + "\", \"phonenumber\":\"" + phoneNumber + "\"}";
+		return registerKolakPayload;
+	}
 }
